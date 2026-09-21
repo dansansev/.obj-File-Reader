@@ -72,6 +72,8 @@ The resulting coordinates are then converted into Pygame screen coordinates.
 A line cannot be projected normally if part of it lies behind the camera. When an edge connects a visible point to a point behind the camera, the program calculates where that edge would intersect with the camera plane (z=0). A temporary point is created at the intersection, and only the visible portion of the edge is rendered.
 These temporary clipping points are removed after each frame.
 
+During development, I constructed this desmos project to help visualize this math. It is mostly a developer scratchpad: https://www.desmos.com/3d/ej1fdii4qt
+
 ### Rendering Loop
 
 Each frame follows this process:
